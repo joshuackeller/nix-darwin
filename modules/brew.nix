@@ -11,15 +11,34 @@
     };
 
     taps = [
-      "1password/tap"
-      "nikitabobko/tap"
+      {
+        name = "1password/tap";
+        trusted = true;
+      }
+      {
+        name = "nikitabobko/tap";
+        trusted = true;
+      }
+
     ];
 
     casks = [
-      "1password-cli"
-      "aerospace"
-      "ghostty"
-      "raycast"
+      {
+        name = "1password-cli";
+        trusted = true;
+      }
+      {
+        name = "aerospace";
+        trusted = true;
+      }
+      {
+        name = "ghostty";
+        trusted = true;
+      }
+      {
+        name = "raycast";
+        trusted = true;
+      }
     ];
   };
 }
