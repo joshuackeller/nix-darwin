@@ -29,9 +29,12 @@
 
   programs.git = {
     enable = true;
-    settings.user = {
-      name = "joshuackeller";
-      email = "joshuackeller@gmail.com";
+    settings = {
+      user = {
+        name = "joshuackeller";
+        email = "joshuackeller@gmail.com";
+      };
+      core.editor = "nvim";
     };
   };
 
