@@ -62,4 +62,15 @@
       };
     };
   };
+
+  programs.opencode = {
+    enable = true;
+    tui.theme = "tokyonight";
+    settings = {
+      permission = {
+        edit = "ask";
+        bash = "ask";
+      };
+    };
+  };
 }
