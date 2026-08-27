@@ -2,18 +2,13 @@
 {
   imports = [
     ./starship/starship.nix
+    ./tmux/tmux.nix
   ];
   home.username = "joshuakeller";
   home.homeDirectory = "/Users/joshuakeller";
   home.stateVersion = "26.05";
 
   home.sessionPath = [ "/etc/profiles/per-user/joshuakeller/bin" ];
-
-  home.packages = with pkgs; [
-    git
-    fzf
-    starship
-  ];
 
   programs.zsh = {
     enable = true;
