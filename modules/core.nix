@@ -34,4 +34,8 @@
     backupFileExtension = "bak";
     users.joshuakeller = import ../home-manager/home.nix;
   };
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
 }
