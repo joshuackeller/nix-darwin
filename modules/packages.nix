@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     # CLI TOOLS
+    delta
     opencode
     lazygit
     jq
