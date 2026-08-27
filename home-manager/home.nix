@@ -30,6 +30,9 @@
         email = "joshuackeller@gmail.com";
       };
       core.editor = "nvim";
+      credential.helper = "osxkeychain";
+      pull.rebase = true;
+      push.autoSetupRemote = true;
     };
   };
 
@@ -41,6 +44,21 @@
       theme = "TokyoNight Moon";
       font-family = "JetBrainsMonoNL Nerd Font Mono";
       font-thicken = true;
+    };
+  };
+
+  programs.ssh = {
+    enable = true;
+    enableDefaultConfig = false;
+    settings = {
+      "github.com" = {
+        HostName = "ssh.github.com";
+        User = "git";
+        Port = 443;
+        IdentityFile = "~/.ssh/github";
+        AddKeysToAgent = "yes";
+        UseKeychain = true;
+      };
     };
   };
 }
