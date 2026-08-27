@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./aerospace/aerospace.nix
     ./starship/starship.nix
     ./tmux/tmux.nix
   ];
