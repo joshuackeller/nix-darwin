@@ -18,6 +18,10 @@
         name = "raycast";
         trusted = true;
       }
+      {
+        name = "google-chrome";
+        trusted = true;
+      }
     ];
   };
 }
