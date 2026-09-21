@@ -9,13 +9,6 @@
       cleanup = "zap";
     };
 
-    taps = [
-      {
-        name = "1password/tap";
-        trusted = true;
-      }
-    ];
-
     casks = [
       {
         name = "1password-cli";
