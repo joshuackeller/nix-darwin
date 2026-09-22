@@ -31,6 +31,8 @@
     neovim
 
     # OTHER
+    colima
+    docker
     tmux
   ];
 }

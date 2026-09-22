@@ -38,4 +38,12 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];
+
+  launchd.user.agents.colima = {
+    command = "${pkgs.colima}/bin/colima start --foreground";
+    serviceConfig = {
+      RunAtLoad = true;
+      KeepAlive = true;
+    };
+  };
 }

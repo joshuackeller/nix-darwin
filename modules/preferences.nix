@@ -35,4 +35,6 @@
     enableKeyMapping = true;
     remapCapsLockToEscape = true;
   };
+
+  system.startup.chime = false;
 }
