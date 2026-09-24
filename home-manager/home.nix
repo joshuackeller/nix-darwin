@@ -56,7 +56,7 @@
         HostName = "ssh.github.com";
         User = "git";
         Port = 443;
-        IdentityFile = "~/.ssh/github";
+        IdentityFile = "~/.ssh/id_ed25519";
         AddKeysToAgent = "yes";
         UseKeychain = true;
       };
