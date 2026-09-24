@@ -32,6 +32,7 @@
 
     # OTHER
     colima
+    cloudflared
     docker
     tmux
   ];
