@@ -24,16 +24,17 @@
     }@inputs:
     {
       darwinConfigurations = {
-        "Joshuas-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-          specialArgs = { inherit inputs self; };
-          modules = [
-            ./modules/packages.nix
-            ./modules/preferences.nix
-            ./modules/core.nix
-            ./modules/brew.nix
-            home-manager.darwinModules.home-manager
-          ];
-        };
+        # disabling so i don't accidentally trigger it
+        # "Joshuas-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+        #   specialArgs = { inherit inputs self; };
+        #   modules = [
+        #     ./modules/packages.nix
+        #     ./modules/preferences.nix
+        #     ./modules/core.nix
+        #     ./modules/brew.nix
+        #     home-manager.darwinModules.home-manager
+        #   ];
+        # };
         "homelab" = nix-darwin.lib.darwinSystem {
           specialArgs = { inherit inputs self; };
           modules = [
