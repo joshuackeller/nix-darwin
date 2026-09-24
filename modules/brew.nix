@@ -23,6 +23,10 @@
         trusted = true;
       }
       {
+        name = "aldente";
+        trusted = true;
+      }
+      {
         name = "tailscale-app";
         trusted = true;
       }
