@@ -30,6 +30,7 @@
           ./modules/preferences.nix
           ./modules/core.nix
           ./modules/brew.nix
+          ./modules/no-sleep.nix
           home-manager.darwinModules.home-manager
         ];
       };
