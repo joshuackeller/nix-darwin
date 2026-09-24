@@ -23,16 +23,28 @@
       home-manager,
     }@inputs:
     {
-      darwinConfigurations."Joshuas-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-        specialArgs = { inherit inputs self; };
-        modules = [
-          ./modules/packages.nix
-          ./modules/preferences.nix
-          ./modules/core.nix
-          ./modules/brew.nix
-          ./modules/no-sleep.nix
-          home-manager.darwinModules.home-manager
-        ];
+      darwinConfigurations = {
+        "Joshuas-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+          specialArgs = { inherit inputs self; };
+          modules = [
+            ./modules/packages.nix
+            ./modules/preferences.nix
+            ./modules/core.nix
+            ./modules/brew.nix
+            home-manager.darwinModules.home-manager
+          ];
+        };
+        "homelab" = nix-darwin.lib.darwinSystem {
+          specialArgs = { inherit inputs self; };
+          modules = [
+            ./modules/packages.nix
+            ./modules/preferences.nix
+            ./modules/core.nix
+            ./modules/brew.nix
+            ./modules/no-sleep.nix
+            home-manager.darwinModules.home-manager
+          ];
+        };
       };
     };
 }
