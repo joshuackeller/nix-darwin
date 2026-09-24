@@ -22,6 +22,10 @@
         name = "google-chrome";
         trusted = true;
       }
+      {
+        name = "aldente";
+        trusted = true;
+      }
     ];
   };
 }
