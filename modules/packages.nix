@@ -9,8 +9,6 @@
     ripgrep
     bat
 
-    # LANGUAGES
-
     # LANGUAGE TOOLS
     clang-tools
     rustup
@@ -19,13 +17,13 @@
     nixfmt
 
     # LSPS
-    typescript-go
-    lua-language-server
-    gopls
-    vscode-langservers-extracted
-    pyright
     clang
+    gopls
+    lua-language-server
     nil
+    pyright
+    typescript-go
+    vscode-langservers-extracted
 
     # TEXT EDITORS
     neovim

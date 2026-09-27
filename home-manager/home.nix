@@ -1,22 +1,16 @@
 { pkgs, ... }:
 {
   imports = [
-    ./aerospace/aerospace.nix
-    ./starship/starship.nix
-    ./tmux/tmux.nix
+    ./aerospace
+    ./starship
+    ./tmux
+    ./zsh
   ];
   home.username = "joshuakeller";
   home.homeDirectory = "/Users/joshuakeller";
   home.stateVersion = "26.05";
 
   home.sessionPath = [ "/etc/profiles/per-user/joshuakeller/bin" ];
-
-  programs.zsh = {
-    enable = true;
-    shellAliases = {
-      vim = "nvim";
-    };
-  };
 
   programs.fzf = {
     enable = true;
@@ -34,6 +28,7 @@
       credential.helper = "osxkeychain";
       pull.rebase = true;
       push.autoSetupRemote = true;
+      init.defaultBranch = "main";
     };
   };
 
@@ -72,5 +67,10 @@
         bash = "ask";
       };
     };
+  };
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
   };
 }
